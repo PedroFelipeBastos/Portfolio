@@ -1,0 +1,142 @@
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.form__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--muted);
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--text);
+}
+
+.form__submit {
+  height: 52px;
+  border-radius: 8px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form__submit:disabled {
+  opacity: 0.6;
+}
+
+.form__message {
+  font-size: 14px;
+}
+
+.form__message--error {
+  color: #ff6b5a;
+}
+
+.form__message--success {
+  color: #8fd19e;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+
+.channels li:first-child {
+  grid-column: 1 / -1;
+}
+
+.channels a {
+  display: grid;
+  align-content: end;
+  gap: 8px;
+  min-height: 220px;
+  padding: 32px;
+  border-radius: var(--radius);
+  background: var(--card);
+  transition: background 0.2s;
+}
+
+.channels a:hover {
+  background: #1d1d1d;
+}
+
+.channels__icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: auto;
+}
+
+.channels__label {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.channels .mono {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+  text-transform: none;
+}
+
+.clock {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 160px var(--side) 120px;
+  text-align: center;
+}
+
+.clock__time {
+  margin-top: 16px;
+  font-size: clamp(56px, 10vw, 140px);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 700px) {
+  .form__row,
+  .channels {
+    grid-template-columns: 1fr;
+  }
+  .channels a {
+    min-height: 160px;
+    padding: 24px;
+  }
+}

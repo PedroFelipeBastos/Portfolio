@@ -1,0 +1,95 @@
+{
+  "switcher": {
+    "label": "Site language",
+    "changeTo": "Switch to {{language}}"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "stack": "Stack",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "view": "View"
+  },
+  "common": {
+    "back": "Go back",
+    "github": "GitHub",
+    "present": "Present"
+  },
+  "footer": {
+    "top": "Back to top"
+  },
+  "home": {
+    "available": "Available for internships",
+    "about": "About me",
+    "aboutTag": "Profile",
+    "projectsTag": "Timeline",
+    "experienceTag": "Education",
+    "stackTag": "Stack · Data"
+  },
+  "about": {
+    "label": "Software Engineering · PUC Minas",
+    "title": "About me",
+    "text": "I am a Software Engineering student at PUC Minas, having previously completed two semesters of Information Systems at UFOP. I have gained experience with technologies such as Python, JavaScript, and React, as well as back-end development using Java and Spring Boot. I have a strong interest in new technologies and am currently seeking an internship to grow professionally."
+  },
+  "projects": {
+    "label": "Timeline",
+    "title": "Projects",
+    "all": "All",
+    "details": "View project"
+  },
+  "project": {
+    "about": "About",
+    "tech": "Technologies",
+    "team": "Team",
+    "more": "More projects"
+  },
+  "experience": {
+    "label": "Education and academic projects",
+    "title": "Experience",
+    "education": "Education",
+    "academic": "Academic projects",
+    "seeProject": "View project"
+  },
+  "stack": {
+    "label": "Tools I use",
+    "title": "Tech stack",
+    "groups": {
+      "language": "Language",
+      "framework": "Framework",
+      "tool": "Tool"
+    },
+    "live": "Live",
+    "github": "GitHub"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Available for internships and projects.",
+    "formLabel": "Inquiry form",
+    "name": "Name",
+    "email": "E-mail",
+    "message": "Message",
+    "send": "Send e-mail",
+    "sending": "Sending…",
+    "success": "Message sent!",
+    "error": "Couldn't send it. Try again.",
+    "notConfigured": "E-mail sending is not configured.",
+    "localTime": "Local time",
+    "city": "Belo Horizonte, Brazil",
+    "errors": {
+      "nameRequired": "Please enter your name.",
+      "nameShort": "Your name must have at least 2 letters.",
+      "emailRequired": "Please enter your e-mail.",
+      "emailInvalid": "Please enter a valid e-mail.",
+      "messageRequired": "Please write a message.",
+      "messageShort": "The message must have at least 10 characters."
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Page not found",
+    "back": "Back to home"
+  }
+}

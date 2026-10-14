@@ -1,0 +1,120 @@
+.stack {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--gap);
+}
+
+.stack__card {
+  position: relative;
+  grid-column: span 2;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius);
+  background: var(--card);
+  transition: background 0.2s;
+}
+
+.stack__card:nth-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.stack__card:hover {
+  background: #1d1d1d;
+}
+
+.stack__icon {
+  width: 72px;
+  height: 72px;
+}
+
+.stack__name {
+  position: absolute;
+  left: 28px;
+  bottom: 24px;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.live {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 calc(var(--side) - var(--gap)) 96px;
+}
+
+.live .gh-card,
+.live .gh-kpi,
+.live .gh-repo,
+.live .waka-kpi,
+.live .waka-card,
+.live .waka-now,
+.live .gh-filters select {
+  background: var(--surface);
+  border-color: var(--border);
+  border-radius: 24px;
+  box-shadow: none;
+}
+
+.live .gh-avatar {
+  border-color: var(--bg);
+  box-shadow: none;
+}
+
+.live .gh-button,
+.live .waka-ranges button.active {
+  box-shadow: none;
+}
+
+.live .gh-repo:hover {
+  border-color: var(--muted);
+}
+
+.live .gh-topics li {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.live .gh-skeleton,
+.live .waka-skeleton span {
+  background: #1c1c1c;
+}
+
+.live .gh,
+.live .gh-card {
+  --gh-l0: #1c1c1c;
+  --gh-l1: #2c4a5c;
+  --gh-l2: #3f6d88;
+  --gh-l3: #6a9ab5;
+  --gh-l4: #cfe3ef;
+}
+
+@media (max-width: 900px) {
+  .stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stack__card,
+  .stack__card:nth-child(-n + 2) {
+    grid-column: span 1;
+  }
+  .stack__icon {
+    width: 48px;
+    height: 48px;
+  }
+  .stack__name {
+    left: 20px;
+    bottom: 16px;
+    font-size: 18px;
+  }
+}
+
+.stack__tag {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+}

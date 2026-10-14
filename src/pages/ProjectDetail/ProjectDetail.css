@@ -1,0 +1,38 @@
+.more {
+  overflow: hidden;
+  margin: 120px 0 80px;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.more__track {
+  display: flex;
+  width: max-content;
+  animation: more 30s linear infinite;
+}
+
+.more__track span {
+  padding-right: 0.3em;
+  font-size: clamp(56px, 8vw, 120px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.more__track em {
+  font-style: normal;
+  color: #333333;
+}
+
+@keyframes more {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .more__track {
+    animation: none;
+  }
+}

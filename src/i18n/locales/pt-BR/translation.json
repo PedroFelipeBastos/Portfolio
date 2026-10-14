@@ -1,0 +1,95 @@
+{
+  "switcher": {
+    "label": "Idioma do site",
+    "changeTo": "Mudar para {{language}}"
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "experience": "Experiências",
+    "stack": "Tecnologias",
+    "contact": "Contato",
+    "menu": "Menu",
+    "close": "Fechar",
+    "view": "Ver"
+  },
+  "common": {
+    "back": "Voltar",
+    "github": "GitHub",
+    "present": "Atual"
+  },
+  "footer": {
+    "top": "Voltar ao topo"
+  },
+  "home": {
+    "available": "Disponível para estágio",
+    "about": "Sobre mim",
+    "aboutTag": "Perfil",
+    "projectsTag": "Linha do tempo",
+    "experienceTag": "Formação",
+    "stackTag": "Stack · Dados"
+  },
+  "about": {
+    "label": "Engenharia de Software · PUC Minas",
+    "title": "Sobre mim",
+    "text": "Estudante de Engenharia de Software na PUC Minas, cursados 2 períodos de Sistemas de Informação na UFOP. Tive contato com as tecnologias como Python, JavaScript e React, back-end com Java e Spring Boot. Tenho grande curiosidade sobre novas tecnologias e atualmente busco um estágio para me desenvolver como profissinal."
+  },
+  "projects": {
+    "label": "Linha do tempo",
+    "title": "Projetos",
+    "all": "Todos",
+    "details": "Ver projeto"
+  },
+  "project": {
+    "about": "Sobre",
+    "tech": "Tecnologias",
+    "team": "Equipe",
+    "more": "Mais projetos"
+  },
+  "experience": {
+    "label": "Formação e projetos acadêmicos",
+    "title": "Experiências",
+    "education": "Formação",
+    "academic": "Projetos acadêmicos",
+    "seeProject": "Ver projeto"
+  },
+  "stack": {
+    "label": "Ferramentas que uso",
+    "title": "Tecnologias",
+    "groups": {
+      "language": "Linguagem",
+      "framework": "Framework",
+      "tool": "Ferramenta"
+    },
+    "live": "Ao vivo",
+    "github": "GitHub"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Disponível para estágio e projetos.",
+    "formLabel": "Formulário",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "send": "Enviar e-mail",
+    "sending": "Enviando…",
+    "success": "Mensagem enviada!",
+    "error": "Não foi possível enviar. Tente de novo.",
+    "notConfigured": "Envio de e-mail não configurado.",
+    "localTime": "Hora local",
+    "city": "Belo Horizonte, MG",
+    "errors": {
+      "nameRequired": "Informe seu nome.",
+      "nameShort": "O nome precisa ter pelo menos 2 letras.",
+      "emailRequired": "Informe seu e-mail.",
+      "emailInvalid": "Digite um e-mail válido.",
+      "messageRequired": "Escreva uma mensagem.",
+      "messageShort": "A mensagem precisa ter pelo menos 10 caracteres."
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Página não encontrada",
+    "back": "Voltar ao início"
+  }
+}

@@ -1,0 +1,68 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 var(--side);
+}
+
+.timeline__count {
+  margin: 32px 0 64px;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 80px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--side) - var(--gap) + 5px);
+  width: 1px;
+  background: var(--line);
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.timeline__info {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  padding-left: calc(var(--side) - var(--gap) + 40px);
+}
+
+.timeline__info::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: calc(var(--side) - var(--gap));
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--text);
+}
+
+.timeline__info .hud__pills {
+  margin-top: 0;
+}
+
+.timeline .card {
+  aspect-ratio: 16 / 10;
+}
+
+@media (max-width: 900px) {
+  .timeline__item {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

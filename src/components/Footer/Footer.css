@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 24px 40px;
+  padding: 56px var(--side) 48px;
+}
+
+.footer .mono {
+  font-size: 16px;
+}
+
+.footer__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 32px;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
+
+.footer a:hover,
+.footer button:hover {
+  opacity: 0.6;
+}

@@ -1,0 +1,101 @@
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  grid-template-rows: var(--header-h) 1fr auto;
+  background: var(--bg);
+  animation: menu-in 0.3s ease;
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.menu__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--side);
+}
+
+.menu__top .mono {
+  font-size: 20px;
+}
+
+.menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.menu__link {
+  position: relative;
+  font-size: min(11vw, 12vh, 150px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  text-transform: uppercase;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.menu__strip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 0;
+  white-space: pre;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu__strip span {
+  display: inline-block;
+  animation: strip 20s linear infinite;
+}
+
+@keyframes strip {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.menu__link:hover,
+.menu__link:focus-visible {
+  outline: none;
+  filter: blur(6px);
+  opacity: 0.6;
+}
+
+.menu__link:hover .menu__strip,
+.menu__link:focus-visible .menu__strip {
+  opacity: 1;
+}
+
+.menu__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 32px;
+  padding: 0 var(--side) 40px;
+}
+
+.menu__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+}
+
+.menu__socials .mono {
+  font-size: 15px;
+}
